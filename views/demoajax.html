@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo AJAX</title>
+
+</head>
+<body>
+<h1 id="status"></h1>
+<button onclick="getWeather()">Get Weather</button>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.0.min.js"
+        integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+        crossorigin="anonymous"></script>
+<script>
+  function getWeather() {
+    $.get("/getweather", function (response) {
+      $("#status").text(`temperature = ${response.temperature.toFixed(2)} degrees, moisture = ${response.moisture.toFixed(2)}%`)
+    })
+  }
+</script>
+</body>
+</html>

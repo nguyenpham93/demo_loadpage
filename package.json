@@ -1,0 +1,23 @@
+{
+  "name": "cli_serv_com",
+  "version": "1.0.0",
+  "description": "Demo different types of client server communication",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "nunjucks": "^3.0.0",
+    "shortid": "^2.2.8"
+  },
+  "author": "Trinh Minh Cuong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechMaster/cli_serv_com"
+  }
+}
